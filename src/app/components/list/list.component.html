@@ -5,6 +5,6 @@
 <ul>
   <li *ngFor="let list of lists.getList(); index as i">
     {{ list.title }}
-    <button (click)="list.remove(i)">-</button>
+    <button (click)="lists.remove(i)">-</button>
   </li>
 </ul>
