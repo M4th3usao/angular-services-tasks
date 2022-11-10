@@ -12,6 +12,7 @@ import { ListComponent } from './components/list/list.component';
 import { TasksService } from './services/tasks.service';
 import { TimerService } from './services/timer.service';
 import { ListService } from './services/list.service';
+import { DisciplineComponent } from './components/discipline/discipline.component';
 
 @NgModule({
   imports: [
@@ -22,6 +23,7 @@ import { ListService } from './services/list.service';
       { path: 'timer', component: TimerComponent },
       { path: 'tasks', component: TasksComponent },
       { path: 'list', component: ListComponent },
+      { path: 'discipline', component: DisciplineComponent },
     ]),
   ],
   declarations: [
@@ -30,6 +32,7 @@ import { ListService } from './services/list.service';
     TimerComponent,
     TasksComponent,
     ListComponent,
+    DisciplineComponent,
   ],
   bootstrap: [AppComponent],
   providers: [TasksService, TimerService, ListService],
